@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fondos 4K – Ultra HD Descargas</title>
+  <meta name="description" content="Descarga fondos 4K Ultra HD de Minecraft, Call of Duty, Windows 11, Harry Potter, Demon Slayer y más. Imágenes en máxima calidad para escritorio y móvil.">
+  <link rel="stylesheet" href="fondo.css">
+  <link rel="shortcut icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>🌌 Fondos 4K Ultra HD</h1>
+      <p class="subtitulo">Descarga fondos espectaculares en resolución máxima</p>
+      <a href="1.jpg" download="Fondo_Minecraft_5K.jpg" class="btn-descargar">⬇ Descargar</a>
+
+    </div>
+  </header>
+
+  <section id="banner">
+    <div class="scroll-banner">
+      <span>✨ Explora y descarga tus fondos favoritos ✨</span>
+      <div class="scroll-content">
+        <img src="1.jpg" alt="Fondo Minecraft 4K" loading="lazy">
+        <img src="2.jpg" alt="Fondo Call of Duty Black Ops 7" loading="lazy">
+        <img src="3.jpg" alt="Fondo Windows 11 AMOLED" loading="lazy">
+        <img src="4.jpg" alt="Fondo Harry Potter" loading="lazy">
+        <img src="5.jpg" alt="Fondo Demon Slayer" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <aside id="columna">
+      <h3>Fondos recientes</h3>
+      <ul>
+        <li><a href="#Fondo1">Minecraft</a></li>
+        <li><a href="#Fondo2">Call of Duty</a></li>
+        <li><a href="#Fondo3">Windows 11</a></li>
+        <li><a href="#Fondo4">Harry Potter</a></li>
+        <li><a href="#Fondo5">Demon Slayer</a></li>
+      </ul>
+    </aside>
+
+    <section id="contenido">
+      <article id="Fondo1">
+        <h2>Minecraft: La Edad del Cobre</h2>
+        <p>Fondo en resolución 5K (5120×2880). Ideal para escritorio y móvil.</p>
+        <img src="1.jpg" alt="Fondo Minecraft 5K cobre" loading="lazy">
+        <a href="1.jpg" download="Fondo_Minecraft_5K.jpg" class="btn-descargar">⬇ Descargar</a>
+
+      </article>
+
+      <article id="Fondo2">
+        <h2>Call of Duty: Black Ops 7</h2>
+        <p>Arte oficial en 4K (3840×2160). Perfecto para gamers.</p>
+        <img src="2.jpg" alt="Fondo Call of Duty Black Ops 7" loading="lazy">
+        <a href="2.jpg" download="Fondo_CallOfDuty_4K.jpg" class="btn-descargar">⬇ Descargar</a>
+      </article>
+
+      <article id="Fondo3">
+        <h2>Windows 11 AMOLED</h2>
+        <p>Diseñado para pantallas OLED con contraste alto y colores vibrantes.</p>
+        <img src="3.jpg" alt="Fondo Windows 11 AMOLED" loading="lazy">
+        <a href="3.jpg" download="Fondo_Windows11_AMOLED.jpg" class="btn-descargar">⬇ Descargar</a>
+      </article>
+
+      <article id="Fondo4">
+        <h2>Harry Potter y el Prisionero de Azkaban</h2>
+        <p>Fondo mágico en 4K (3840×2160) inspirado en Hogwarts.</p>
+        <img src="4.jpg" alt="Fondo Harry Potter 4K" loading="lazy">
+        <a href="4.jpg" download="Fondo_HarryPotter_4K.jpg" class="btn-descargar">⬇ Descargar</a>
+      </article>
+
+      <article id="Fondo5">
+        <h2>Demon Slayer: Kimetsu no Yaiba</h2>
+        <p>Anime en 4K (3840×5270). Ideal para fans del arte japonés.</p>
+        <img src="5.jpg" alt="Fondo Demon Slayer 4K" loading="lazy">
+        <a href="5.jpg" download="Fondo_DemonSlayer_4K.jpg" class="btn-descargar">⬇ Descargar</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fondos 4K | Diseñado por Jean Carlos 💻</p>
+    <div class="social">
+      <a href="#"><img src="icon-fb.svg" alt="Facebook" loading="lazy"></a>
+      <a href="#"><img src="icon-ig.svg" alt="Instagram" loading="lazy"></a>
+      <a href="#"><img src="icon-x.svg" alt="X (Twitter)" loading="lazy"></a>
+    </div>
+  </footer>
+</body>
+</html>
+<script>
+document.querySelectorAll('.btn-descargar').forEach(boton => {
+  boton.addEventListener('click', e => {
+    e.preventDefault();
+    const url = boton.getAttribute('href');
+    const nombre = boton.getAttribute('download') || 'fondo.jpg';
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = nombre;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+</script>
+
+
